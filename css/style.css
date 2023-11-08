@@ -367,7 +367,109 @@ footer .foot-bottom .company {
     font-size: medium;
 }
 
+/* About Page */
+
+#about-home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("/image/about-land2.jpg");
+    width: 100%;
+    height: 60vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#about-home h2 {
+    color: white;
+    font-size: 2.2rem;
+}
+
+#about-container {
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+    justify-content: space-evenly;
+}
+
+#about-container .about-img img {
+    width: 100%;
+}
+
+#about-container .about-img {
+    width: 40%;
+    justify-content: center;
+}
+
+#about-container .about-text {
+    width: 50%;
+    padding: 60px;
+}
+
+#about-container .about-text h2 {
+    color: #29303B;
+    padding-bottom: 15px;
+
+}
+
+#about-container .about-text p {
+    color: #686F7A;
+    font-weight: 300;
+}
+
+#about-container .about-text .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+#about-container .about-text .about-details img {
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+
+#about-container .about-text .about-details .det-text {
+    width: 90%;
+}
+
+#about-container .about-text .about-details .det-text h5 {
+    font-size: 16px;
+    color: #29303B;
+}
+
+/* trusted by */
+#companies {
+    text-align: center;
+    padding: 8vw 6vw 4vw 6vw;
+}
+
+#companies p {
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+#companies .comp-images {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#companies .comp-images img {
+    width: auto;
+    height: 100px;
+}
+
 @media (max-width: 769px) {
+
+    /* responsive navbar */
     nav {
         padding: 15px 20px;
     }
@@ -402,8 +504,6 @@ footer .foot-bottom .company {
         cursor: pointer;
     }
 
-
-
     /* footer */
     .foot-links ul {
         flex-direction: column;
@@ -415,4 +515,22 @@ footer .foot-bottom .company {
         margin: 10px;
     }
 
+    /* about-page */
+    #about-container {
+        padding: 8vw 4vw 2vw 4vw;
+    }
+
+    #about-container .about-img {
+        display: none;
+    }
+
+    #about-container .about-text {
+        width: 100%;
+        padding: 40px 5px 30px 5px;
+    }
+
+    #companies .comp-images img {
+        width: auto;
+        height: 50px;
+    }
 }
