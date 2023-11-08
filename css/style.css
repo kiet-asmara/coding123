@@ -67,6 +67,7 @@ nav .navigation ul li a {
     transition: 0.2s ease;
 }
 
+nav .navigation ul li a.active,
 nav .navigation ul li a:hover {
     color: rgb(255, 217, 29);
     /* ganti warna nnti */
