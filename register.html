@@ -29,10 +29,10 @@
                     <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a class="active" href="courses.html">Courses</a>
+                    <a href="courses.html">Courses</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a class="active" href="contact.html">Contact</a>
                 </li>
                 <li>
                     <a href="login.html">Login</a>
@@ -42,24 +42,42 @@
     </nav>
 
     <!-- landing section -->
-    <section id="about-home">
-        <h2>Courses</h2>
-    </section>
+    <section id="login">
+        <div class="log-container">
 
-    <section id="course">
-        <h1>Our Courses</h1>
-        <p id="over100">...over 100 available!</p>
+            <div class="box form-box">
+                <h2>Register</h2>
+                <form action="" method="post">
 
-        <!-- search function -->
-        <input type="text" id="myinput" placeholder="Search a course...">
-        <h3 id="search-error">Course Not Found</h3>
+                    <div class="field input">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
 
-        <div id="card" class="cr-box">
+                    <div class="field input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="field input">
+                        <label for="username">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+
+                    <div class="field">
+                        <input type="submit" name="submit" value="login" class="btn-sub">
+                    </div>
+                    <div class="links">
+                        Already a member? <a href="login.html">Sign In</a>
+                    </div>
+
+                </form>
+            </div>
 
         </div>
     </section>
 
-    <footer>
+    <footer id="log-footer">
         <div class="foot-container">
 
             <div class="socials">

@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -467,15 +467,86 @@ footer .foot-bottom .company {
     height: 100px;
 }
 
-/* portofolio page */
+/* gallery page */
 
-#porto-container {
+#showcase {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px 0px 10px 0;
+    font-weight: 500;
+}
+
+#gallery {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: 7vw;
+    padding: 1vw 4vw 3vw 4vw;
 }
 
+#gallery-pics {
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(36, 36, 36);
+    border-radius: 8px;
+}
+
+#gallery-pics img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
+}
+
+#gallery-pics ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    max-width: 100%;
+    width: 70rem;
+}
+
+#gallery-pics figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery-pics figure::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    #gallery-pics figure::after {
+        border-radius: 50%;
+        opacity: 1;
+        transform: scale(0);
+        transition: transform 900ms;
+    }
+
+    #gallery-pics a:is(:hover, :focus) img {
+        transform: scale(1.2);
+    }
+}
+
+/* 
 #porto-container .porto-post {
     width: 60%;
 }
@@ -519,7 +590,7 @@ footer .foot-bottom .company {
 
 #porto-container .porto-cate p {
     padding-top: 7px;
-}
+} */
 
 /* courses page */
 #myinput {
@@ -670,6 +741,98 @@ footer .foot-bottom .company {
     border: none;
     font-weight: 600;
     cursor: pointer;
+}
+
+/* login page */
+#login {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("/image/about-land2.jpg");
+    width: 100%;
+    height: 110vh;
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box h2 {
+    color: rgb(255, 217, 29);
+    font-size: 2.2rem;
+}
+
+
+.log-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    width: 350px;
+}
+
+.log-container .box {
+    padding: 30px 40px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-box h2 {
+    padding-bottom: 10px;
+}
+
+.form-box form .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.form-box form .field label {
+    display: block;
+    color: black;
+    padding: 1px;
+    text-align: left;
+}
+
+.form-box form .input input {
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn-sub {
+    height: 35px;
+    background: rgb(175, 174, 174);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-top: 5px;
+}
+
+.btn-sub:hover {
+    opacity: 0.75;
+}
+
+.links {
+    font-size: 15px;
+}
+
+#log-footer {
+    margin-top: 0;
 }
 
 @media (max-width: 769px) {
