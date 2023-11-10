@@ -1,0 +1,290 @@
+<?php
+    session_start();
+    include("php/config.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding123</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <style>
+        #home {
+            background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("image/home-image.jpg");;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>Coding123</h1>
+        <div class="navigation">
+            <input type="checkbox" id="menu-button">
+            <label for="menu-button">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li>
+                <li>
+                    <a href="about.php">About</a>
+                </li>
+                <li>
+                    <a href="gallery.php">Gallery</a>
+                </li>
+                <li>
+                    <a href="courses.php">Courses</a>
+                </li>
+                <li>
+                    <a href="contact.php">Contact</a>
+                </li>
+                <?php
+                    if(isset($_SESSION['valid'])){
+        
+                    
+                ?>
+                <li>
+                    <a href="php/logout.php"> <button class="logout">Log Out</button> </a>
+                </li>
+                <?php
+                    }else{
+                ?>
+                <li>
+                    <a href="login.php">Login</a>
+                </li>
+                <?php
+                }
+                ?>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <h2>Learn How to Code with Coding123</h2>
+        <p>Whether you want to learn or to share what you know, you've come to the right place. As a global destination
+            for online learning, we empower organizations and individuals with flexible and effective skill development.</p>
+        <div class="btn">
+            <a class="button1" href="about.php">Learn More</a>
+            <a class="button2" href="courses.php">Our Courses</a>
+        </div>
+    </section>
+
+    <section id="course">
+        <h1>Our Popular Courses</h1>
+        <p>...and many more available!</p>
+        <div class="cr-box">
+
+            <div class="courses">
+                <img src="image/golang.png" alt="golang">
+                <div class="details">
+                    <span>Updated 9/23</span>
+                    <h6>Golang Beginner Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(1430)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Rp120,000
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="image/javascript.jpeg" alt="javascript">
+                <div class="details">
+                    <span>Updated 10/23</span>
+                    <h6>Advanced Javascript</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(913)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Rp100,000
+                </div>
+            </div>
+
+            <div class="courses">
+                <img src="image/C++.png" alt="C++">
+                <div class="details">
+                    <span>Updated 5/23</span>
+                    <h6>C++ Beginner Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(1046)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Rp150,000
+                </div>
+            </div>
+            <div class="courses">
+                <img src="image/java.jpg" alt="C++">
+                <div class="details">
+                    <span>Updated 1/23</span>
+                    <h6>Java Algorithms Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(578)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Rp70,000
+                </div>
+            </div>
+            <div class="courses">
+                <img src="image/data-science.jpg" alt="C++">
+                <div class="details">
+                    <span>Updated 11/23</span>
+                    <h6>Data Science Beginner Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(731)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Rp130,000
+                </div>
+            </div>
+            <div class="courses">
+                <img src="image/system.jpg" alt="C++">
+                <div class="details">
+                    <span>Updated 3/23</span>
+                    <h6>Systems Design Course</h6>
+                    <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(377)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Rp150,000
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="features">
+        <h1>What You Will Receive</h1>
+        <p>Some benefits you will receive by learning with us are...</p>
+        <div class="ft-container">
+            <div class="ft-box">
+                <i class="fa fa-graduation-cap"></i>
+                <h3>Online Courses</h3>
+                <p>Online courses available anytime you want for however long you want. Courses are routinely updated
+                    every few months to ensure quality.</p>
+            </div>
+            <div class="ft-box">
+                <i class="fa fa-file-certificate"></i>
+                <h3>Professional Certification</h3>
+                <p>Once you finish one of our courses, you will receive a certificate of completion recognized by
+                    trusted, professional organizations around the world.</p>
+            </div>
+            <div class="ft-box">
+                <i class="fa fa-award"></i>
+                <h3>Award Winning</h3>
+                <p>Our courses have won multiple awards from an array of institutions, namely universities and
+                    technological companies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testim">
+        <h1>Student Stories</h1>
+        <p>See what they say about our courses.</p>
+        <div class="test-box">
+
+            <div class="profile">
+                <img src="/image/test1.jpg" alt="">
+                <h6>John Doe</h6>
+                <p class="pro-title">C++ Developer</p>
+                <p class="pro-desc">Coding123 fit us like a glove. Their team curates fresh, up-to-date courses from
+                    their
+                    marketplace and makes them available to customers.</p>
+            </div>
+            <div class="profile">
+                <img src="/image/test2.jpg" alt="">
+                <h6>James Roe</h6>
+                <p class="pro-title">Golang Developer</p>
+                <p class="pro-desc">This course helped me freshen up on my product manager skills and land a job at
+                    Facebook! Thanks guys!</p>
+            </div>
+            <div class="profile">
+                <img src="/image/test3.jpg" alt="">
+                <h6>John Punjabi</h6>
+                <p class="pro-title">Cloud Expert</p>
+                <p class="pro-desc">I am proud to say that after a few months of taking this course...I passed my exam
+                    and am now an AWS Certified Cloud Practitioner! This content was exactly what the CCP exam covered.
+                </p>
+            </div>
+            <div class="profile">
+                <img src="/image/test4.jpg" alt="">
+                <h6>Jane Sloe</h6>
+                <p class="pro-title">Data Scientist</p>
+                <p class="pro-desc">I highly recommend this course for all budding data scientists. Even people with no
+                    prior knowledge of any visualization tools can become a master after completing this course.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-container">
+
+            <div class="socials">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="foot-links">
+                <ul>
+                <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="courses.php">Courses</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="foot-bottom">
+            <p>Copyright &copy;2023; <span class="company">Coding123</span></p>
+        </div>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
