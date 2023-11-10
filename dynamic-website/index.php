@@ -224,7 +224,7 @@
         <div class="test-box">
 
             <div class="profile">
-                <img src="/image/test1.jpg" alt="">
+                <img src="image/test1.jpg" alt="">
                 <h6>John Doe</h6>
                 <p class="pro-title">C++ Developer</p>
                 <p class="pro-desc">Coding123 fit us like a glove. Their team curates fresh, up-to-date courses from
@@ -232,14 +232,14 @@
                     marketplace and makes them available to customers.</p>
             </div>
             <div class="profile">
-                <img src="/image/test2.jpg" alt="">
+                <img src="image/test2.jpg" alt="">
                 <h6>James Roe</h6>
                 <p class="pro-title">Golang Developer</p>
                 <p class="pro-desc">This course helped me freshen up on my product manager skills and land a job at
                     Facebook! Thanks guys!</p>
             </div>
             <div class="profile">
-                <img src="/image/test3.jpg" alt="">
+                <img src="image/test3.jpg" alt="">
                 <h6>John Punjabi</h6>
                 <p class="pro-title">Cloud Expert</p>
                 <p class="pro-desc">I am proud to say that after a few months of taking this course...I passed my exam
@@ -247,7 +247,7 @@
                 </p>
             </div>
             <div class="profile">
-                <img src="/image/test4.jpg" alt="">
+                <img src="image/test4.jpg" alt="">
                 <h6>Jane Sloe</h6>
                 <p class="pro-title">Data Scientist</p>
                 <p class="pro-desc">I highly recommend this course for all budding data scientists. Even people with no
